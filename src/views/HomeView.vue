@@ -1,9 +1,9 @@
-<script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-	<main>
-		<TheWelcome />
-	</main>
+	<div class="text">
+		<h1>测试界面</h1>
+	</div>
 </template>
+
+<style></style>
