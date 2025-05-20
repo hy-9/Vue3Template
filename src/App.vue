@@ -9,6 +9,7 @@ console.log(b);
 </script>
 
 <template>
+	<el-button>Default</el-button>
 	<div>
 		<nav>
 			<RouterLink to="/"> Home </RouterLink>
