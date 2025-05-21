@@ -1,8 +1,15 @@
 <script setup lang="ts">
+import fetchTool from "@/request/fetchTool";
 import type { dome } from "@/type/dome";
 import { ref } from "vue";
 
 const dome = ref<dome>();
+
+let res = await fetchTool.request<dome>({
+	method: "POST",
+	url: "/user/login",
+});
+console.log(res);
 </script>
 
 <template>
