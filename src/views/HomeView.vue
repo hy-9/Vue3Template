@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { dome } from "@/type/dome";
+import { ref } from "vue";
+
+const dome = ref<dome>();
+</script>
 
 <template>
 	<div
