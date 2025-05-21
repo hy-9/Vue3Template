@@ -14,6 +14,7 @@
 		"Tcss": "npx tailwindcss -i src/assets/input.css -o src/assets/output.css --watch"
 	},
 	"dependencies": {
+		"@element-plus/icons-vue": "^2.3.1",
 		"element-plus": "^2.9.10",
 		"pinia": "^3.0.1",
 		"vue": "^3.5.13",

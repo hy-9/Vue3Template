@@ -4,12 +4,20 @@ import type { dome } from "@/type/dome";
 import { ref } from "vue";
 
 const dome = ref<dome>();
+async function login(params: type) {
+	try {
+		let res = await fetchTool.request<dome>({
+			method: "POST",
+			url: "/user/login",
+		});
+		console.log(res);
+	} catch (error) {
+		console.log(error);
+		ElMessage.error(error);
+	}
+}
 
-let res = await fetchTool.request<dome>({
-	method: "POST",
-	url: "/user/login",
-});
-console.log(res);
+login();
 </script>
 
 <template>
@@ -25,7 +33,9 @@ console.log(res);
 		</div>
 		<div>
 			<div class="text-xl font-medium text-black">ChitChat</div>
-			<p class="text-slate-500">You have a new message!</p>
+			<p class="text-slate-500">
+				<el-icon><Select /></el-icon>You have a new message!
+			</p>
 		</div>
 	</div>
 </template>
