@@ -3,7 +3,8 @@ import { createPinia } from "pinia";
 
 import App from "./App.vue";
 import router from "./router";
-
+import ElementPlus from "element-plus";
+import zhCn from "element-plus/es/locale/lang/zh-cn";
 import "./assets/output.css"; // 全局引入样式文件
 // main.ts
 
@@ -15,7 +16,9 @@ const app = createApp(App);
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 	app.component(key, component);
 }
-
+app.use(ElementPlus, {
+	locale: zhCn,
+});
 app.use(createPinia());
 app.use(router);
 

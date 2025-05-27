@@ -4,7 +4,7 @@ import type { dome } from "@/type/dome";
 import { ref } from "vue";
 
 const dome = ref<dome>();
-async function login(params: type) {
+async function login() {
 	try {
 		let res = await fetchTool.request<dome>({
 			method: "POST",
@@ -13,7 +13,7 @@ async function login(params: type) {
 		console.log(res);
 	} catch (error) {
 		console.log(error);
-		ElMessage.error(error);
+		ElMessage.error("error");
 	}
 }
 
