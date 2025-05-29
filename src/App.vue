@@ -5,7 +5,7 @@ console.log(import.meta.env);
 </script>
 
 <template>
-	<el-button>Default</el-button>
+	<el-button> Default </el-button>
 	<div>
 		<nav>
 			<RouterLink to="/"> Home </RouterLink>
