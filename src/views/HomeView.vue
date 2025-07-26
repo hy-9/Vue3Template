@@ -22,7 +22,7 @@ login();
 
 <template>
 	<div
-		class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg"
+		class="m-4 mx-auto flex max-h-40 max-w-80 items-center bg-white p-6 shadow-lg"
 	>
 		<div class="shrink-0">
 			<img
@@ -32,7 +32,7 @@ login();
 			/>
 		</div>
 		<div>
-			<div class="text-xl font-medium text-black">ChitChat</div>
+			<div class="text-xl text-black">ChitChat</div>
 			<p class="text-slate-500">
 				<el-icon><Select /></el-icon>You have a new message!
 			</p>
