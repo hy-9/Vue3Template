@@ -8,7 +8,7 @@ console.log(import.meta.env);
 	<el-button> Default </el-button>
 	<div>
 		<nav>
-			<RouterLink to="/"> Home </RouterLink>
+			<RouterLink class="hover:text-blue-500" to="/"> Home </RouterLink>
 		</nav>
 	</div>
 	<RouterView />

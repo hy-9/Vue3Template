@@ -33,9 +33,8 @@ Vue3Template
 └─src                   # 源代码
     │  App.vue          # 入口文件
     │  main.ts          # 创建 Vue 实例
+    │  main.css         # css全局样式入口文件
     ├─assets            # css资源
-    │      input.css    # tailwindcss配置css
-    │      output.css   # tailwindcss输出的css
     ├─components        # 组件
     ├─request           # 请求
     ├─router            # 路由
@@ -50,12 +49,6 @@ Vue3Template
 
 ```bash
 npm install
-```
-
-tailwindcss动态添加样式：
-
-```bash
-npm run Tcss
 ```
 
 运行：
