@@ -11,7 +11,7 @@
 		"test:unit": "vitest",
 		"build-only": "vite build",
 		"type-check": "vue-tsc --build",
-		"prepare": "husky && husky install",
+		"prepare": "husky",
 		"lint:lint-staged": "lint-staged"
 	},
 	"dependencies": {
@@ -37,6 +37,7 @@
 		"eslint": "^8.57.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-prettier": "^5.5.3",
+		"husky": "^9.1.7",
 		"jsdom": "^26.0.0",
 		"npm-run-all2": "^7.0.2",
 		"prettier": "^3.6.2",
