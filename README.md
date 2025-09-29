@@ -3,19 +3,20 @@
 Vue3Template 是一个基于Vue3+Ts的模板项目，包含：
 
 - Vue库：
-    - [vue-router](https://router.vuejs.org/zh/)
-    - [pinia](https://pinia.vuejs.org/zh/)
+  - [vue-router](https://router.vuejs.org/zh/)
+  - [pinia](https://pinia.vuejs.org/zh/)
 - 网络库：
-    - [fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch) 拦截器
+  - [fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch) 拦截器
 - UI组件库：
-    - [tailwindcss](https://tailwindcss.com/docs/installation/using-vite)
-    - [element-plus](https://element-plus.org/zh-CN/#/zh-CN) 及自动导入插件
-    - [ECharts](https://echarts.apache.org/zh/index.html)
+  - [tailwindcss](https://tailwindcss.com/docs/installation/using-vite)
+  - [shadcn-vue](https://www.shadcn-vue.com/)
+  - [element-plus](https://element-plus.org/zh-CN/#/zh-CN) 及自动导入插件
+  - [ECharts](https://echarts.apache.org/zh/index.html)
 - 工程化：
-    - [Eslint](https://eslint.org/)
-    - [Prettier](https://www.prettier.cn/)
-    - [husky](https://typicode.github.io/husky/)
-    - [lint-staged](https://www.npmjs.com/package/lint-staged)
+  - [Eslint](https://eslint.org/)
+  - [Prettier](https://www.prettier.cn/)
+  - [husky](https://typicode.github.io/husky/)
+  - [lint-staged](https://www.npmjs.com/package/lint-staged)
 
 ## 目录结构
 
