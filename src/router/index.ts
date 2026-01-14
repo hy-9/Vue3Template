@@ -1,18 +1,42 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import Home from "@/views/Home.vue";
+import MainOut from "@/views/system/MainOut.vue";
+
+const systemRoutes = [
+	{
+		path: "/",
+		name: "system",
+		redirect: "/view",
+		meta: {
+			hidden: true,
+		},
+	},
+];
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
+		...systemRoutes,
 		{
-			path: "/",
-			name: "home",
-			component: HomeView,
-		},
-		{
-			path: "/chart",
-			name: "chart",
-			component: () => import("../views/ChartView.vue"),
+			path: "/view",
+			component: MainOut,
+			name: "view",
+			redirect: "/home",
+			children: [
+				{
+					path: "/home",
+					name: "home",
+					component: Home,
+					meta: {
+						keepAlive: true,
+					},
+				},
+				{
+					path: "/chart",
+					name: "chart",
+					component: () => import("../views/Chart.vue"),
+				},
+			],
 		},
 	],
 });

@@ -45,7 +45,7 @@ class FetchTool {
 	}): Promise<T> {
 		let url = this.BASE_URL + options.url;
 		let req: RequestInit = this.forwardInterception({ ...options });
-		return await this.fetch(url, req);
+		return await this.fetch<T>(url, req);
 	}
 
 	forwardInterception(options: {

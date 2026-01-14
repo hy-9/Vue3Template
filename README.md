@@ -9,7 +9,9 @@ Vue3Template 是一个基于Vue3+Ts的模板项目，包含：
     - [fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch) 拦截器
 - UI组件库：
     - [tailwindcss](https://tailwindcss.com/docs/installation/using-vite)
+    - [daisyui](https://daisyui.com/docs/intro/)
     - [shadcn-vue](https://www.shadcn-vue.com/)
+    - [lucide-vue-next](https://lucide.cndocs.org/guide/packages/lucide-vue-next) 图标库
     - [element-plus](https://element-plus.org/zh-CN/#/zh-CN) 及自动导入插件
     - [ECharts](https://echarts.apache.org/zh/index.html)
 - 工程化：

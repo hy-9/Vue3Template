@@ -4,7 +4,7 @@ import fetchTool from "@/request/fetchTool";
 import type { dome } from "@/type/dome";
 import { ref } from "vue";
 
-const dome = ref<dome>();
+const count = ref<number>(0);
 async function login() {
 	try {
 		let res = await fetchTool.request<dome>({
@@ -22,7 +22,7 @@ login();
 </script>
 
 <template>
-	<Card :class="'mt-20 mr-auto ml-auto flex w-64 items-center gap-4 p-4'">
+	<Card :class="'m-auto flex w-64 items-center gap-4 p-4'">
 		<div class="shrink-0">
 			<img
 				class="size-12"
@@ -36,6 +36,11 @@ login();
 				<el-icon><Select /></el-icon>You have a new message!
 			</p>
 		</div>
+		<div class="flex items-center gap-4">
+			<div class="text-xl text-black">count: {{ count }}</div>
+			<el-button type="primary" @click="count++">add</el-button>
+		</div>
 	</Card>
 </template>
+
 <style></style>

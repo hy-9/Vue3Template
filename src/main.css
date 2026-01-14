@@ -121,3 +121,6 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+/* 引入daisyui插件 */
+@plugin "daisyui";

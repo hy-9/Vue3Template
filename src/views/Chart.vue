@@ -43,7 +43,9 @@ onMounted(() => {
 </script>
 
 <template>
-	<div id="main" class="h-full w-full"></div>
+	<div class="h-full w-full">
+		<div id="main" class="m-auto h-1/2 w-1/2"></div>
+	</div>
 </template>
 
 <style scoped></style>
