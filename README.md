@@ -53,6 +53,9 @@ Vue3Template
     ├─stores            # 状态管理
     ├─type              # 类型定义
     └─views             # 页面
+    │  Chart.vue        # 图表页面
+    │  MainOut.vue      # 主页面
+    └─system            # 系统页面
 ```
 
 ## 指令
