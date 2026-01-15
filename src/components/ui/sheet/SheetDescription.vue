@@ -6,18 +6,18 @@ import { DialogDescription } from "reka-ui";
 import { cn } from "@/lib/utils";
 
 const props = defineProps<
-	DialogDescriptionProps & { class?: HTMLAttributes["class"] }
+  DialogDescriptionProps & { class?: HTMLAttributes["class"] }
 >();
 
 const delegatedProps = reactiveOmit(props, "class");
 </script>
 
 <template>
-	<DialogDescription
-		data-slot="sheet-description"
-		:class="cn('text-muted-foreground text-sm', props.class)"
-		v-bind="delegatedProps"
-	>
-		<slot />
-	</DialogDescription>
+  <DialogDescription
+    data-slot="sheet-description"
+    :class="cn('text-muted-foreground text-sm', props.class)"
+    v-bind="delegatedProps"
+  >
+    <slot />
+  </DialogDescription>
 </template>

@@ -6,41 +6,37 @@ import { ref } from "vue";
 
 const count = ref<number>(0);
 async function login() {
-	try {
-		let res = await fetchTool.request<dome>({
-			method: "POST",
-			url: "/user/login",
-		});
-		console.log(res);
-	} catch (error) {
-		console.log(error);
-		ElMessage.error("error");
-	}
+  try {
+    let res = await fetchTool.request<dome>({
+      method: "POST",
+      url: "/user/login",
+    });
+    console.log(res);
+  } catch (error) {
+    console.log(error);
+    ElMessage.error("error");
+  }
 }
 
 login();
 </script>
 
 <template>
-	<Card :class="'m-auto flex w-64 items-center gap-4 p-4'">
-		<div class="shrink-0">
-			<img
-				class="size-12"
-				src="..\..\public\favicon.ico"
-				alt="ChitChat Logo"
-			/>
-		</div>
-		<div>
-			<div class="text-xl text-black">ChitChat</div>
-			<p class="text-slate-500">
-				<el-icon><Select /></el-icon>You have a new message!
-			</p>
-		</div>
-		<div class="flex items-center gap-4">
-			<div class="text-xl text-black">count: {{ count }}</div>
-			<el-button type="primary" @click="count++">add</el-button>
-		</div>
-	</Card>
+  <Card :class="'m-auto flex w-64 items-center gap-4 p-4'">
+    <div class="shrink-0">
+      <img class="size-12" src="..\..\public\favicon.ico" alt="ChitChat Logo" />
+    </div>
+    <div>
+      <div class="text-xl text-black">ChitChat</div>
+      <p class="text-slate-500">
+        <el-icon><Select /></el-icon>You have a new message!
+      </p>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="text-xl text-black">count: {{ count }}</div>
+      <el-button type="primary" @click="count++">add</el-button>
+    </div>
+  </Card>
 </template>
 
 <style></style>
