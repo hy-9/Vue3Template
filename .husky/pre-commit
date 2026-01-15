@@ -3,3 +3,4 @@
 echo "执行提交前 prettier 格式化 ..."
 npx prettier --write src/
 git add src/
+echo "prettier 格式化成功"
